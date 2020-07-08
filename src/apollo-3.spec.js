@@ -20,7 +20,7 @@ const TestComponent = () => {
 };
 
 describe("ApolloMockProvider", () => {
-  test("returns missing mock error as query hook error.", () => {
+  test("returns missing mock error as query hook error.", async () => {
     const { container } = render(
       <MockedProvider mocks={[]}>
         <TestComponent />
