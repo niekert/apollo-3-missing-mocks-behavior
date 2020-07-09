@@ -28,7 +28,7 @@ describe("ApolloMockProvider", () => {
       </MockedProvider>
     );
 
-    // hacky way to wait for query to be resolved
+    // ensure query is resolved (should use waitForElement etc)
     await new Promise((resolve) => setTimeout(resolve, 1000));
 
     expect(container.innerHTML).toMatchInlineSnapshot(`
